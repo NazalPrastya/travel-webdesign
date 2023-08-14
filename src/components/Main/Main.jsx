@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const Main = () => {
-  const [bg, setBg] = useState('public/background/raja-ampat.jpg');
+  const [bg, setBg] = useState('background/raja-ampat.jpg');
   const [title, setTitle] = useState('Raja Ampat');
 
   const handleBg = (e) => {
