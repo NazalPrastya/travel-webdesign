@@ -63,7 +63,7 @@ const Main = () => {
             {backgrounds.map((background) => (
               <SwiperSlide className="w-[5rem] h-[5rem] md:w-[16rem] md:h-[15rem] md:max-h-max  rounded-md mx-2 my-2 hover:scale-105 duration-200" key={background.id}>
                 <a href="#" onClick={handleBg}>
-                  <img src={`public/background/` + background.image} alt={background.name} className={`w-full h-full rounded-md shadow-md shadow-white bg-cover object-center`} />
+                  <img src={`background/` + background.image} alt={background.name} className={`w-full h-full rounded-md shadow-md shadow-white bg-cover object-center`} />
                 </a>
               </SwiperSlide>
             ))}
