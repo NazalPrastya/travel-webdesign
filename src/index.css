@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+* {
+  font-family: 'Poppins', sans-serif;
+}
+@tailwind components;
+.btn-primary {
+  @apply px-5 py-2 font-medium text-white rounded-full bg-green-500 hover:bg-green-800 hover:shadow-md hover:shadow-green-50 mt-5 duration-300 w-fit;
+}
+
+@tailwind utilities;
+
+.nav-box {
+  transition: linear 0.5s;
+  @apply bg-white md:bg-transparent rounded-full md:rounded-none bg-opacity-70 shadow-md shadow-green-200 md:shadow-none;
+}
+
+.item-box {
+  transition: linear 0.2s;
+  @apply bg-white md:bg-transparent bg-opacity-70 rounded-t-xl md:bg-opacity-100 md:rounded-none;
+}
