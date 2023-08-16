@@ -10,7 +10,31 @@ const Trending = () => {
     <section className="py-44">
       <div className="container">
         <h3 className="text-3xl font-semibold text-green-600 uppercase">Now Trending</h3>
-        <Swiper slidesPerView={4} cubeEffect={true} pagination={{ clickable: true }} modules={[Pagination]} spaceBetween={10} onSwiper={(swiper) => console.log(swiper)}>
+        <Swiper
+          slidesPerView={4}
+          cubeEffect={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            '@0.00': {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            '@1.50': {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination]}
+          spaceBetween={10}
+        >
           <SwiperSlide>
             <div className="mx-3 bg-green-100 max-w-md my-4 rounded-xl overflow-hidden hover:translate-y-10 duration-300">
               <div className="p-2 max-h-52 overflow-hidden">
